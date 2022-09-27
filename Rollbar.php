@@ -11,8 +11,8 @@ class Rollbar extends BaseObject
     public $enabled = true;
     public $accessToken;
     public $baseApiUrl = 'https://api.rollbar.com/api/1/';
-    public $batchSize;
-    public $batched;
+    public $batchSize = 50;
+    public $batched = false;
     public $branch;
     public $codeVersion;
     public $environment;
